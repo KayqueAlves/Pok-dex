@@ -1,0 +1,87 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, rgb(31, 212, 197), white);
+    text-align: center;
+    min-height: 100vh;
+}
+
+main{
+    position: relative;
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+}
+
+.pokedex{
+    width: 100%;
+    max-width: 425px;
+}
+
+.pokemon{
+    position: absolute;
+    width: 25%;
+    bottom: 50%;
+    left: 35%;
+}
+
+.pokemon-data{
+    position: absolute;
+    color: rgb(61, 61, 61);
+    font-weight: 600;
+    font-size: clamp(8px, 5vw, 30px);
+    bottom: 40%;
+    right: 26%;
+}
+
+form{
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 15%;
+}
+
+.input-search{
+    border: 2px solid rgb(121, 121, 121);
+    border-radius: 10px;
+    color: rgb(74, 82, 82);
+    font-weight: 600;
+    outline: none;
+    width: 100%;
+    padding: 4%;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -2px 3px 0  rgb(67, 67, 67), -3px 4px 0  rgb(46, 46, 46)
+}
+
+.buttons{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 2%;
+}
+
+.button{
+
+    width: 50%;
+    padding: 4%;
+    border: 3px solid rgb(22, 22, 22);
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(46, 46, 46);
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -2px 3px 0  rgb(41, 41, 41), -3px 4px 0  rgb(31, 31, 31)
+}
+
+.button:active{
+    background-color: rgb(30, 30, 30);
+    box-shadow: inset -2px 3px 0 rgb(26, 26, 26);
+    font-size: 0.9rem;
+}
